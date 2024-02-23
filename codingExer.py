@@ -530,3 +530,123 @@ current_time = time.asctime(time.localtime(time.time()))
 print(current_time)
 
 '''
+
+
+'''
+# Exercise 27: Body Mass Index
+#
+# Write a program that computes the body mass index (BMI) of an individual. Your program should begin by reading a height and weight from the user. Then it should use one of the following two formulas to compute the BMI before displaying it. If you read the height in inches and the weight in pounds then body mass index is computed using the following formula:
+# BMI = weight / height * height * 703.
+# If you read the height in meters and the weight in kilograms then body mass index is computed using this slightly simpler formula: BMI = weight / height * height
+
+height = int(input("What is your height in meters ? "))
+weight = int(input("What is your weight in kilogram ? "))
+BMI = weight / (height * height)
+print(f"Your BMI is {BMI}")
+
+'''
+
+
+
+'''
+# Exercise 28:Wind Chill
+#
+# When the wind blows in cold weather, the air feels even colder than it actually is because the movement of the air increases the rate of cooling for warm objects, like people. This effect is known as wind chill.
+# In 2001, Canada, the United Kingdom and the United States adopted the following formula for computing the wind chill index. Within the formula Ta is the
+# air temperature in degrees Celsius and V is the wind speed in kilometers per hour.
+# A similar formula with different constant values can be used with temperatures in
+# degrees Fahrenheit and wind speeds in miles per hour.
+# WCI = 13.12 + 0.6215Ta − 11.37V0.16 + 0.3965TaV0.16
+# Write a program that begins by reading the air temperature and wind speed from the user. Once these values have been read your program should display the wind chill index rounded to the closest integer.
+# The wind chill index is only considered valid for temperatures less than or equal to 10 degrees Celsius and wind speeds exceeding 4.8 kilometers per hour
+
+Ta = int(input("Enter the air temperature in degrees Celsius : "))
+V = int(input("Enter the wind speed in kilometers : "))
+
+WCI = 13.12 + 0.6215 * (Ta) - 11.37(V)**0.16 + 0.3965*(Ta)*(V)**0.16
+
+# UNABLE TO SOLVE THIS !!
+
+'''
+
+
+'''
+# Exercise 29: Celsius to Fahrenheit and Kelvin
+# Write a program that begins by reading a temperature from the user in degrees
+# Celsius. Then your program should display the equivalent temperature in degrees
+# Fahrenheit and degrees Kelvin. The calculations needed to convert between different
+# units of temperature can be found on the internet
+
+temperature = int(input("Enter the temperature degree celsius : "))
+calcFahrenheit = (temperature * 2) + 30
+calcKelvin = temperature + 273.15
+print(f"Celcius is {temperature}°C ,converted to Fahrenheit is {calcFahrenheit}°F, converted to kelvin is {calcKelvin}K")
+
+'''
+
+# Exercise 30: Units of Pressure
+#
+# In this exercise you will create a program that reads a pressure from the user in kilopascals. Once the pressure has been read your program should report the equivalent pressure in pounds per square inch, millimeters of mercury and atmospheres. Use your research skills to determine the conversion factors between these units.
+
+
+
+'''
+# Exercise 31: Sum of the Digits in an Integer
+# Develop a program that reads a four-digit integer from the user and displays the sum
+# of the digits in the number. For example, if the user enters 3141 then your program
+# should display 3+1+4+1=9.
+
+numbers = input("Enter a four-digit integer : ")
+firstNum = numbers[0]
+secondNum = numbers[1]
+thirdNum = numbers[2]
+fourthNum = numbers[3]
+
+total = int(firstNum) + int(secondNum) + int(thirdNum) + int(fourthNum)
+
+print(f"{firstNum} + {secondNum} + {thirdNum} + {fourthNum} = {total} ")
+
+'''
+
+
+'''
+# Exercise 32: Sort 3 Integers
+#
+# Create a program that reads three integers from the user and displays them in sorted
+# order (from smallest to largest). Use the min and max functions to find the smallest
+# and largest values. The middle value can be found by computing the sum of all three
+# values, and then subtracting the minimum value and the maximum value.
+
+
+numbers = input("Enter a three-digit integer : ")
+min_num = min(numbers)
+max_num = max(numbers)
+firstNum = numbers[0]
+secondNum = numbers[1]
+thirdNum = numbers[2]
+middle_num = int(firstNum) + int(secondNum) + int(thirdNum) - int(min_num) - int(max_num)
+print(f"The largest value is {max_num} \n The smallest value is {min_num} \n The middle value is {middle_num}")
+
+'''
+
+
+
+
+'''
+# Exercise 33: Day Old Bread
+#
+# A bakery sells loaves of bread for $3.49 each. Day old bread is discounted by 60
+# percent. Write a program that begins by reading the number of loaves of day old
+# bread being purchased from the user. Then your program should display the regular
+# price for the bread, the discount because it is a day old, and the total price. All of the
+# values should be displayed using two decimal places, and the decimal points in all
+# of the numbers should be aligned when reasonable values are entered by the user.
+
+bread_price =  3.49
+discounted_price = 3.49 * 0.60
+
+bread_purchased = float(input("How many of loaves of day old bread was purchased ?  "))
+total = bread_purchased * discounted_price
+print(f"Regular price : ${bread_price} \nDiscount price : ${discounted_price:.1f} \nTotal price : ${total:.1f}")
+
+'''
