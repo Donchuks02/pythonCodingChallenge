@@ -417,3 +417,76 @@ print(f"Volume of the cylinder is {volume:.1f}")
 # 9 and then add 273.15 to it.
 
 
+'''
+# Exercise 21: Area of a Triangle
+#
+# The area of a triangle can be computed using the following formula, where b is the
+# length of the base of the triangle, and h is its height:
+# area = b * h / 2
+# Write a program that allows the user to enter values for b and h. The program
+# should then compute and display the area of a triangle with base length b and height h.
+
+base_length = int(input("Enter the length of base ? "))
+height = int(input("Enter the height ? "))
+
+area = (base_length * height) / 2
+
+print(f"The base lenght is {base_length} \n The height is {height} \n The area of the triangle is {area}")
+
+
+'''
+
+'''
+# Exercise 22: Area of a Triangle (Again)
+#
+# In the previous exercise you created a program that computed the area of a triangle
+# when the length of its base and its height were known. It is also possible to compute
+# the area of a triangle when the lengths of all three sides are known. Let s1, s2 and s3
+# be the lengths of the sides. Let s = (s1 + s2 + s3)/2. Then the area of the triangle
+# can be calculated using the following formula: area = s × (s − s1) × (s − s2) × (s − s3)
+# Develop a program that reads the lengths of the sides of a triangle from the user and displays its area
+import math
+s1 = int(input("Enter the length of base : "))
+s2 = int(input("Enter the left side lenght : "))
+s3 = int(input("Enter the right side lenght "))
+
+s = (s1 + s2 + s3) / 2
+
+area = math.sqrt( s * ( s - s1 ) * ( s - s2 ) * ( s - s3 ) )
+
+print(f"The area of the triangle is {area}")
+
+'''
+
+# Exercise 23: Area of a Regular Polygon
+#
+# A polygon is regular if its sides are all the same length and the angles between all of
+# the adjacent sides are equal. The area of a regular polygon can be computed using
+# the following formula, where s is the length of a side and n is the number of sides
+# area = n * s2 / 4 * tan (π/π)
+# Write a program that reads s and n from the user and then displays the area of a
+# regular polygon constructed from these values.
+
+
+
+'''
+# Exercise 24: Units of Time
+#
+# Create a program that reads a duration from the user as a number of days, hours,
+# minutes, and seconds. Compute and display the total number of seconds represented
+# by this duration.
+
+days = int(input("Input number of days : "))
+hours = int(input("Input number of hours : "))
+minutes = int(input("Input number of mintues : "))
+seconds = int(input("Input number of seconds : "))
+
+seconds_per_day = 86400
+seconds_per_hour = 3600
+seconds_per_min = 60
+
+total = days * seconds_per_day + hours * seconds_per_hour + minutes * seconds_per_min + seconds
+
+print(f"The total number of seconds represented by this duration is {total}")
+
+'''
