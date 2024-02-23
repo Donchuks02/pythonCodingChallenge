@@ -490,3 +490,43 @@ total = days * seconds_per_day + hours * seconds_per_hour + minutes * seconds_pe
 print(f"The total number of seconds represented by this duration is {total}")
 
 '''
+
+'''
+# Exercise 25: Units of Time (Again)
+#
+# In this exercise you will reverse the process described in the previous exercise.
+# Develop a program that begins by reading a number of seconds from the user.
+# Then your program should display the equivalent amount of time in the form
+# D:HH:MM:SS, where D, HH, MM, and SS represent days, hours, minutes and seconds respectively. The hours, minutes and seconds should all be formatted so that they occupy exactly two digits, with a leading 0 displayed if necessary.
+
+total_seconds = int(input("Enter the number of seconds: "))
+
+days = total_seconds / 86400
+total_seconds = total_seconds % 86400
+
+hours = total_seconds / 3600
+total_seconds = total_seconds % 3600
+
+minutes = total_seconds / 60
+total_seconds = total_seconds % 60
+
+
+formatted_time = f"{days} : {hours:.1f} : {minutes:.1f} : {total_seconds:.1f}"
+
+print("Equivalent time:", formatted_time)
+
+'''
+
+
+
+'''
+# Exercise 26: Current Time
+#
+# Python includes a library of functions for working with time, including a function
+# called asctime in the time module. It reads the current time from the computer’s internal clock and returns it in a human-readable format. Write a program that displays the current time and date. Your program will not require any input from the user
+
+import time
+current_time = time.asctime(time.localtime(time.time()))
+print(current_time)
+
+'''
