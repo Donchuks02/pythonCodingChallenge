@@ -650,3 +650,189 @@ total = bread_purchased * discounted_price
 print(f"Regular price : ${bread_price} \nDiscount price : ${discounted_price:.1f} \nTotal price : ${total:.1f}")
 
 '''
+
+
+# IF STATEMENT EXERCISES
+
+
+
+'''
+# Exercise 34: Even or Odd?
+#
+# Write a program that reads an integer from the user. Then your program should
+# display a message indicating whether the integer is even or odd.
+
+number = int(input("Enter a number : "))
+if number % 2 == 0:
+  print("The number is even")
+else:
+  print("The number is odd")
+
+'''
+
+'''
+
+# Exercise 35: Dog Years
+#
+# It is commonly said that one human year is equivalent to 7 dog years. However this
+# simple conversion fails to recognize that dogs reach adulthood in approximately two
+# years. As a result, some people believe that it is better to count each of the first two
+# human years as 10.5 dog years, and then count each additional human year as 4 dog years.
+# Write a program that implements the conversion from human years to dog years
+# described in the previous paragraph. Ensure that your program works correctly for
+# conversions of less than two human years and for conversions of two or more human
+# years. Your program should display an appropriate error message if the user enters a negative number.
+
+human_years = 5
+
+if human_years < 0:
+    print("Error: Please enter a non-negative number")
+elif human_years <= 2:
+    dog_years = human_years * 10.5
+    print(dog_years)
+else:
+    dog_years = 21 + (human_years - 2) * 4
+    print(dog_years)
+'''
+
+
+
+
+''''
+# Exercise 36:Vowel or Consonant
+#
+# In this exercise you will create a program that reads a letter of the alphabet from the
+# user. If the user enters a, e, i, o or u then your program should display a message
+# indicating that the entered letter is a vowel. If the user enters y then your program
+# should display a message indicating that sometimes y is a vowel, and sometimes y is
+# a consonant. Otherwise your program should display a message indicating that the letter is a consonant.
+
+
+inputed_letter = input("Enter a letter : ")
+if inputed_letter == "a" or inputed_letter == "e" or inputed_letter == "i" or inputed_letter == "o" or inputed_letter == "u":
+  print(f"{inputed_letter} is a Vowel")
+elif inputed_letter == 'y':
+  print(f"sometimes {inputed_letter} is a vowel, and sometimes {inputed_letter} is a consonant")
+else:
+  print(f"{inputed_letter} is a consonant")
+
+'''
+
+'''
+# Exercise 37: Name that Shape
+
+# Write a program that determines the name of a shape from its number of sides. Read
+# the number of sides from the user and then report the appropriate name as part of
+# a meaningful message. Your program should support shapes with anywhere from 3 up to (and including) 10 sides.
+# If a number of sides outside of this range is entered
+# then your program should display an appropriate error message.
+
+inputed_sides = int(input("Enter the number of sides : "))
+
+if inputed_sides == 3:
+  print("This is a Triangle")
+elif inputed_sides == 4:
+  print("This is a Quadrilateral")
+elif inputed_sides == 5:
+  print("This is a Pentagon")
+elif inputed_sides == 6:
+  print("This is a Hexagon")
+elif inputed_sides == 7:
+  print("This is a Octagon")
+elif inputed_sides == 8:
+  print("This is a Octagon")
+elif inputed_sides == 9:
+  print("This is a Nonagon")
+elif inputed_sides == 9:
+  print("This is a Decagon")
+else:
+  print("Please enter a side within the range of 3 - 10")
+
+
+'''
+
+
+'''
+# Exercise 38: Month Name to Number of Days
+#
+# The length of a month varies from 28 to 31 days. In this exercise you will create
+# a program that reads the name of a month from the user as a string. Then your
+# program should display the number of days in that month. Display “28 or 29 days”
+# for February so that leap years are addressed
+
+name_of_month = (input("Enter the name of a month : ")).lower()
+
+if name_of_month == 'september' or name_of_month == 'april' or name_of_month == 'june' or name_of_month == 'november':
+  print(f"{name_of_month} has 30 days")
+elif name_of_month == 'february':
+  print(f"{name_of_month} has 28 - 29 days")
+else:
+  print(f"{name_of_month} has 31 days ")
+
+'''
+
+'''
+# Exercise 39: Sound Levels
+#
+# The following table lists the sound level in decibels for several common noises.
+
+# Noise               Decibel level (dB)
+# Jackhammer          130
+# Gas lawnmower       106
+# Alarm clock         70
+# Quiet room          40
+
+# Write a program that reads a sound level in decibels from the user. If the user
+# enters a decibel level that matches one of the noises in the table then your program
+# should display a message containing only that noise. If the user enters a number
+# of decibels between the noises listed then your program should display a message
+# indicating which noises the level is between. Ensure that your program also generates
+# reasonable output for a value smaller than the quietest noise in the table, and for a
+# value larger than the loudest noise in the table
+
+decibel_level = int(input("Enter a decibel level : "))
+
+if decibel_level == 130:
+  print("Jackhammer")
+elif decibel_level > 106 and decibel_level < 130:
+ print("Your noise level is between Jackhammer and Gas lawnmower ")
+elif decibel_level == 106:
+  print("Gas lawnmower")
+elif decibel_level > 70 and decibel_level < 106:
+ print("Your noise level is between Gas lawnmower and Alarm clock ")
+elif decibel_level == 70:
+  print("Alarm clock")
+elif decibel_level > 40 and decibel_level < 70:
+  print("Your noise level is between Alarm clock and Quiet room ")
+elif decibel_level == 40:
+  print("Quiet room")
+elif decibel_level < 40:
+  print("Your noise level is less than Quiet room")
+elif decibel_level > 130:
+  print("Your noise level is greater than Jackhammer")
+
+  '''
+
+
+'''
+# Exercise 40: Name that Triangle
+#
+# A triangle can be classified based on the lengths of its sides as equilateral, isosceles
+# or scalene. All 3 sides of an equilateral triangle have the same length. An isosceles
+# triangle has two sides that are the same length, and a third side that is a different
+# length. If all of the sides have different lengths then the triangle is scalene.
+# Write a program that reads the lengths of 3 sides of a triangle from the user.
+# Display a message indicating the type of the triangle.
+
+first_side = int(input("Enter the length of first side : "))
+second_side = int(input("Enter the length of second side : "))
+third_side = int(input("Enter the length of third side : "))
+
+if first_side == second_side and first_side == third_side:
+  print("This is an equilateral triangle")
+elif first_side == second_side or first_side == third_side or second_side == third_side:
+  print("This is an isosceles triangle")
+else:
+  print("This is a scalene triangle")
+
+  '''
