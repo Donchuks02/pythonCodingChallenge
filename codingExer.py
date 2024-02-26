@@ -836,3 +836,397 @@ else:
   print("This is a scalene triangle")
 
   '''
+
+
+
+
+'''
+# Exercise 41: Note To Frequency
+#
+# The following table lists an octave of music notes, beginning with middle C, along with their frequencies.
+
+# Note      Frequency (Hz)
+# C4        261.63
+# D4        293.66
+# E4        329.63
+# F4        349.23
+# G4        392.00
+# A4        440.00
+# B4        493.88
+#
+#
+# Begin by writing a program that reads the name of a note from the user and
+# displays the note’s frequency. Your program should support all of the notes listed previously.
+# Once you have your program working correctly for the notes listed previously you
+# should add support for all of the notes from C0 to C8. While this could be done by
+# adding many additional cases to your if statement, such a solution is cumbersome,
+# inelegant and unacceptable for the purposes of this exercise. Instead, you should
+# exploit the relationship between notes in adjacent octaves. In particular, the frequency
+# of any note in octave n is half the frequency of the corresponding note in octave n+1.
+# By using this relationship, you should be able to add support for the additional notes
+# without adding additional cases to your if statement.
+# Hint: To complete this exercise you will need to extract individual characters
+# from the two-character note name so that you can work with the letter and
+# the octave number separately. Once you have separated the parts, compute the
+# frequency of the note in the fourth octave using the data in the table above.
+# Then divide the frequency by 24−x , where x is the octave number entered by
+# the user. This will halve or double the frequency the correct number of times
+
+name_of_note = input("Enter the name of the note : ")
+if name_of_note == "C4":
+  print("Your note is 261.63")
+elif name_of_note == "D4":
+  print("Your note is 293.66")
+elif name_of_note == "E4":
+  print("Your note is 329.63")
+elif name_of_note == "F4":
+  print("Your note is 349.23")
+elif name_of_note == "G4":
+  print("Your note is 392.00")
+elif name_of_note == "A4":
+  print("Your note is 440.00")
+elif name_of_note == "B4":
+  print("Your note is 493.88")
+
+c0 = 261.63
+c1 = 261.63/2
+c2 = 261.63/4
+c3 = 261.63/8
+c4 = 261.63/16
+c5 = 261.63/32
+c6 = 261.63/64
+c7 = 261.63/128
+c8 = 261.63/256
+
+
+UNABLE TO SOLVE
+
+'''
+
+
+# Exercise 42: Frequency To Note
+#
+# In the previous question you converted from note name to frequency. In this question
+# you will write a program that reverses that process. Begin by reading a frequency
+# from the user. If the frequency is within one Hertz of a value listed in the table in
+# the previous question then report the name of the note. Otherwise report that the
+# frequency does not correspond to a known note. In this exercise you only need to
+# consider the notes listed in the table. There is no need to consider notes from other
+# octaves.
+
+
+
+
+
+'''
+
+#
+# Exercise 43: Faces on Money
+#
+# It is common for images of a country’s previous leaders, or other individuals of historical significance, to appear on its money. The individuals that appear on banknotes
+# in the United States are listed in Table 2.1.
+# Write a program that begins by reading the denomination of a banknote from the
+# user. Then your program should display the name of the individual that appears on the
+#
+#
+# Table 2.1 Individuals that
+# appear on Banknotes
+# Individual          Amount
+# George Washington     $1
+# Thomas Jefferson      $2
+# Abraham Lincoln       $5
+# Alexander Hamilton    $10
+# Andrew Jackson        $20
+# Ulysses S. Grant      $50
+# Benjamin Franklin     $100
+#
+#
+# banknote of the entered amount. An appropriate error message should be displayed
+# if no such note exists.
+# While two dollar banknotes are rarely seen in circulation in the United States
+# they are legal tender that can be spent just like any other denomination. The
+# United States has also issued banknotes in denominations of $500, $1,000,
+# $5,000, and $10,000 for public use. However, high denomination banknotes
+# have not been printed since 1945 and were officially discontinued in 1969. As
+# a result, we will not consider them in this exercise.
+
+enter_denomination = int(input("Enter the denomination :$ "))
+if enter_denomination == 1:
+  print("George Washington")
+elif enter_denomination == 2:
+  print("Thomas Jefferson")
+elif enter_denomination == 5:
+  print("Abraham Lincoln")
+elif enter_denomination == 10:
+  print("Alexander Hamilton")
+elif enter_denomination == 20:
+  print("Andrew Jackson")
+elif enter_denomination == 50:
+  print("Ulysses S. Grant")
+elif enter_denomination == 100:
+  print("Benjamin Franklin")
+else:
+    print("No such banknote exists")
+
+
+
+'''
+
+
+'''
+# Exercise 44: Date to Holiday Name
+
+# Canada has three national holidays which fall on the same dates each year.
+
+# Holiday             Date
+# New year’s day      January 1
+# Canada day          July 1
+# Christmas day       December 25
+
+# Write a program that reads a month and day from the user. If the month and day
+# match one of the holidays listed previously then your program should display the
+# holiday’s name. Otherwise your program should indicate that the entered month and
+# day do not correspond to a fixed-date holiday.
+# Canada has two additional national holidays, Good Friday and Labour Day,
+# whose dates vary from year to year. There are also numerous provincial and
+# territorial holidays, some of which have fixed dates, and some of which have
+# variable dates. We will not consider any of these additional holidays in this
+# exercise.
+
+month = (input("Enter the month : ")).lower()
+day = (input("Enter the day : "))
+
+date = month + day
+
+if date == "january1":
+ print("New Year's Day")
+elif date == "july1":
+ print("Canada Day")
+elif date == "december25":
+ print("Christmas Day")
+else:
+ print("Entered month and day do not correspond to a fixed-date holiday.")
+
+
+'''
+
+
+
+'''
+
+# Exercise 45: What Color is that Square?
+#
+# Positions on a chess board are identified by a letter and a number. The letter    identifies the column, while the number identifies the row, as shown below:
+#
+# img.md
+#
+# Write a program that reads a position from the user. Use an if statement to determine if the column begins with a black square or a white square. Then use modular
+# arithmetic to report the color of the square in that row. For example, if the user enters a1 then your program should report that the square is black. If the user enters d5
+# then your program should report that the square is white. Your program may assume that a valid position will always be entered. It does not need to perform any error checking.
+
+# BELLOW IS THE ANSWER AI GAVE ME
+
+# position = input("Enter the position on the chess board (e.g. a1, d5): ")
+
+column = position[0]
+row = int(position[1])
+
+columns = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
+column_index = columns.index(column)
+
+if (column_index + row) % 2 == 0:
+ print(f"The square at position {position} is white")
+else:
+ print(f"The square at position {position} is black")
+
+
+#  MY SOLUTION AFTER I STUDIED HOW TO CHECK FOR THE WHITE AND BLACK BOX IN THE CHESS BOARD
+#  all even numbers are in white squares, all odd numbers are in black squares
+
+
+columns = input("Enter the alphabetical column of the position on the chess board : ")
+rows = int(input("Enter the numberic row of the position on the chess board: "))
+
+if rows % 2 == 0:
+  print("The square is white")
+else:
+  print("The square is black")
+
+
+
+'''
+
+
+
+
+
+'''
+
+# Exercise 46: Season from Month and Day
+
+# The year is divided into four seasons: spring, summer, fall and winter. While the
+# exact dates that the seasons change vary a little bit from year to year because of the
+# way that the calendar is constructed, we will use the following dates for this exercise:
+
+# Season      First day
+# Spring      March 20
+# Summer      June 21
+# Fall        September 22
+# Winter      December 21
+
+# Create a program that reads a month and day from the user. The user will enter
+# the name of the month as a string, followed by the day within the month as an
+# integer. Then your program should display the season associated with the date that was entered
+
+month = (input("Enter the month : ")).lower()
+day = int(input("Enter the day : "))
+
+date = month + str(day)
+
+if date == "march20":
+ print("Spring")
+elif date == "june21":
+ print("Summer")
+elif date == "september22":
+ print("Fall")
+elif date == "december21":
+ print("Winter")
+else:
+ print("Please enter a month within the range of March - December")
+
+
+'''
+
+'''
+# Exercise 47: Birth Date to Astrological Sign
+#
+# The horoscopes commonly reported in newspapers use the position of the sun at the
+# time of one's birth to try and predict the future. This system of astrology divides the
+# year into twelve zodiac signs, as outline in the table below:
+
+# Zodiac sign           Date range
+# Capricorn             December 22 to January 19
+# Aquarius              January 20 to February 18
+# Pisces                February 19 to March 20
+# Aries                 March 21 to April 19
+# Taurus                April 20 to May 20
+# Gemini                May 21 to June 20
+# Cancer                June 21 to July 22
+# Leo                   July 23 to August 22
+# Virgo                 August 23 to September 22
+# Libra                 September 23 to October 22
+# Scorpio               October 23 to November 21
+# Sagittarius           November 22 to December 21
+
+# Write a program that asks the user to enter his or her month and day of birth. Then
+# your program should report the user’s zodiac sign as part of an appropriate output message.
+
+month = input("Enter your birth month : ").lower()
+day = int(input("Enter your birth day : "))
+
+if (month == 'december' and day >= 22) or (month == 'january' and day <= 19):
+  print("Capricorn")
+elif (month == 'january' and day >= 20) or (month == 'february' and day <= 18):
+  print("Aquarius")
+elif (month == 'february' and day >= 19) or (month == 'march' and day <= 20):
+  print("Pisces")
+elif (month == 'march' and day >= 21) or (month == 'april' and day <= 19):
+  print("Aries")
+elif (month == 'april' and day >= 20) or (month == 'may' and day <= 20):
+  print("Taurus")
+elif (month == 'may' and day >= 21) or (month == 'june' and day <= 20):
+  print("Gemini")
+elif (month == 'june' and day >= 21) or (month == 'july' and day <= 22):
+  print("Cancer")
+elif (month == 'july' and day >= 23) or (month == 'august' and day <= 22):
+  print("Leo")
+elif (month == 'august' and day >= 23) or (month == 'september' and day <= 22):
+  print("Virgo")
+elif (month == 'september' and day >= 23) or (month == 'october' and day <= 22):
+  print("Libra")
+elif (month == 'october' and day >= 23) or (month == 'november' and day <= 21):
+  print("Scorpio")
+elif (month == 'november' and day >= 22) or (month == 'december' and day <= 21):
+  print("Sagittarius")
+else:
+  print("Please enter a month within the range of January - December")
+
+
+'''
+
+
+
+
+
+
+# Exercise 48: Chinese Zodiac
+#
+# The Chinese zodiac assigns animals to years in a 12 year cycle. One 12 year cycle is
+# shown in the table below. The pattern repeats from there, with 2012 being another
+# year of the dragon, and 1999 being another year of the hare.
+#
+# Year                Animal
+# 2000                Dragon
+# 2001                Snake
+# 2002                Horse
+# 2003                Sheep
+# 2004                Monkey
+# 2005                Rooster
+# 2006                Dog
+# 2007                Pig
+# 2008                Rat
+# 2009                Ox
+# 2010                Tiger
+# 2011                Hare
+#
+# Write a program that reads a year from the user and displays the animal associated
+# with that year. Your program should work correctly for any year greater than or equal
+# to zero, not just the ones listed in the table
+
+
+
+
+
+
+# Exercise 49: Richter Scale
+#
+# The following table contains earthquake magnitude ranges on the Richter scale and
+# their descriptors:
+#
+# Magnitude                 Descriptor
+# Less than 2.0             Micro
+# 2.0 to less than 3.0      Very minor
+# 3.0 to less than 4.0      Minor
+# 4.0 to less than 5.0      Light
+# 5.0 to less than 6.0      Moderate
+# 6.0 to less than 7.0      Strong
+# 7.0 to less than 8.0      Major
+# 8.0 to less than 10.0     Great
+# 10.0 or more              Meteoric
+#
+# Write a program that reads a magnitude from the user and displays the appropriate
+# descriptor as part of a meaningful message. For example, if the user enters 5.5 then
+# your program should indicate that a magnitude 5.5 earthquake is considered to be a
+# moderate earthquake
+
+
+
+# Exercise 50: Roots of a Quadratic Function
+#
+# A univariate quadratic function has the form f (x) = ax2 + bx + c, where a, b and
+# c are constants, and a is non-zero. The roots of a quadratic function can be found
+# by finding the values of x that satisfy the quadratic equation ax2 + bx + c = 0. A
+# quadratic function may have 0, 1 or 2 real roots. These roots can be computed using
+# the quadratic formula, shown below:
+# root = −b ± √
+# b2 − 4ac
+# 2a
+# The portion of the expression under the square root sign is called the discriminant.
+# If the discriminant is negative then the quadratic equation does not have any real roots.
+# If the discriminant is 0, then the equation has one real root. Otherwise the equation
+# has two real roots, and the expression must be evaluated twice, once using a plus
+# sign, and once using a minus sign, when computing the numerator.
+# Write a program that computes the real roots of a quadratic function. Your program
+# should begin by prompting the user for the values of a, b and c. Then it should display
+# a message indicating the number of real roots, along with the values of the real roots (if any)
