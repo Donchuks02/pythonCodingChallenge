@@ -1187,7 +1187,7 @@ else:
 
 
 
-
+'''
 
 # Exercise 49: Richter Scale
 #
@@ -1210,6 +1210,32 @@ else:
 # your program should indicate that a magnitude 5.5 earthquake is considered to be a
 # moderate earthquake
 
+magnitude = float(input("Enter the magnitude : "))
+
+if magnitude < 2.0 :
+  print('Micro earthquake')
+elif magnitude >= 2.0 and magnitude < 3.0:
+  print('Very minor earthquake ')
+elif magnitude >= 3.0 and magnitude < 4.0:
+  print('Minor earthquake ')
+elif magnitude >= 4.0 and magnitude < 5.0:
+  print('Light earthquake ')
+elif magnitude >= 5.0 and magnitude < 6.0:
+  print('Moderate earthquake ')
+elif magnitude >= 6.0 and magnitude < 7.0:
+  print('Strong earthquake ')
+elif magnitude >= 7.0 and magnitude < 8.0:
+  print('Major earthquake ')
+elif magnitude >= 8.0 and magnitude < 10.0:
+  print('Great earthquake ')
+elif magnitude >= 10.0:
+  print('Meteoric earthquake ')
+else:
+ print("Please enter a magnitude within the range of 2.0 - 10.0")
+
+
+'''
+
 
 
 # Exercise 50: Roots of a Quadratic Function
@@ -1219,9 +1245,7 @@ else:
 # by finding the values of x that satisfy the quadratic equation ax2 + bx + c = 0. A
 # quadratic function may have 0, 1 or 2 real roots. These roots can be computed using
 # the quadratic formula, shown below:
-# root = −b ± √
-# b2 − 4ac
-# 2a
+# root = −b ± √b2 − 4ac / 2a
 # The portion of the expression under the square root sign is called the discriminant.
 # If the discriminant is negative then the quadratic equation does not have any real roots.
 # If the discriminant is 0, then the equation has one real root. Otherwise the equation
@@ -1230,3 +1254,102 @@ else:
 # Write a program that computes the real roots of a quadratic function. Your program
 # should begin by prompting the user for the values of a, b and c. Then it should display
 # a message indicating the number of real roots, along with the values of the real roots (if any)
+
+
+
+
+
+'''
+# Exercise 51: Letter Grade to Grade Points
+#
+# At a particular university, letter grades are mapped to grade points in the following
+# manner:
+# Letter        Grade points
+# A+            4.0
+# A             4.0
+# A−            3.7
+# B+            3.3
+# B             3.0
+# B−            2.7
+# C+            2.3
+# C             2.0
+# C−            1.7
+# D+            1.3
+# D             1.0
+# F             0
+#
+# Write a program that begins by reading a letter grade from the user. Then your
+# program should compute and display the equivalent number of grade points. Ensure that your program generates an appropriate error message if the user enters an invalid letter grade.
+
+letter_grade  = input("Enter the letter grade : ").capitalize()
+
+if letter_grade == "A+":
+  print("4.0")
+elif letter_grade == "A":
+  print("4.0")
+elif letter_grade == "A-":
+  print("3.7")
+elif letter_grade == "B+":
+  print("3.3")
+elif letter_grade == "B":
+  print("3.0")
+elif letter_grade == "B-":
+  print("2.7")
+elif letter_grade == "C+":
+  print("2.3")
+elif letter_grade == "C":
+  print("2.0")
+elif letter_grade == "C-":
+  print("1.7")
+elif letter_grade == "D+":
+  print("1.3")
+elif letter_grade == "D":
+  print("1.0")
+elif letter_grade == "F":
+  print("0")
+else:
+  print("Please enter a valid letter grade")
+
+'''
+
+
+
+
+'''
+# Exercise 52: Grade Points to Letter Grade
+#
+# In the previous exercise you created a program that converts a letter grade into the
+# equivalent number of grade points. In this exercise you will create a program that
+# reverses the process and converts from a grade point value entered by the user to a
+# letter grade. Ensure that your program handles grade point values that fall between
+# letter grades. These should be rounded to the closest letter grade. Your program should report A+ for a 4.0 (or greater) grade point average.
+
+grade = float(input('Enter your grade number: '))
+if grade >= 4.0:
+  print("A+")
+elif grade >= 3.7 and grade < 4.0:
+  print("A")
+elif grade >= 3.3 and grade < 3.7:
+  print("A-")
+elif grade >= 3.0 and grade < 3.3:
+  print("B+")
+elif grade >= 2.7 and grade < 3.0:
+  print("B")
+elif grade >= 2.3 and grade < 2.7:
+  print("B-")
+elif grade >= 2.0 and grade < 2.3:
+  print("C+")
+elif grade >= 1.7 and grade < 2.0:
+  print("C")
+elif grade >= 1.3 and grade < 1.7:
+  print("C-")
+elif grade >= 1.0 and grade < 1.3:
+  print("D+")
+elif grade >= 0.7 and grade < 1.0:
+  print("D")
+elif grade >= 0.0 and grade < 0.7:
+  print("F")
+else:
+  print("Please enter a valid grade number")
+
+'''
