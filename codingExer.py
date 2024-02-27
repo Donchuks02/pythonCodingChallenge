@@ -696,9 +696,11 @@ else:
 '''
 
 
-
+# UNABLE TO SOLVE
 
 ''''
+
+
 # Exercise 36:Vowel or Consonant
 #
 # In this exercise you will create a program that reads a letter of the alphabet from the
@@ -1353,3 +1355,289 @@ else:
   print("Please enter a valid grade number")
 
 '''
+
+
+'''
+# Exercise 53: Assessing Employees
+#
+# At a particular company, employees are rated at the end of each year. The rating scale
+# begins at 0.0, with higher values indicating better performance and resulting in larger raises. The value awarded to an employee is either 0.0, 0.4, or 0.6 or more. Values between 0.0 and 0.4, and between 0.4 and 0.6 are never used. The meaning associated with each rating is shown in the following table. The amount of an employee’s raise is $2400.00 multiplied by their rating.
+#
+# Rating            Meaning
+# 0.0               Unacceptable performance
+# 0.4               Acceptable performance
+# 0.6 or more       Meritorious performance
+#
+# Write a program that reads a rating from the user and indicates whether the performance was unacceptable, acceptable or meritorious. The amount of the employee’s raise should also be reported. Your program should display an appropriate error message if an invalid rating is entered.
+import math
+
+emplo_raise = 2400.00
+
+rating = float(input("Enter your rating : "))
+if rating == 0.00:
+  total = emplo_raise
+  print(f"Your rating is an Unacceptable performance, your raise is ${total} ")
+elif rating == 0.04:
+  total =  emplo_raise * rating
+  print(f"Your rating is an Acceptable performance, your raise is ${total} ")
+elif rating >= 0.06:
+  total = emplo_raise * rating
+  print(f"Your rating is a Meritorious performance, your raise is ${total} ")
+else:
+  print("Please enter a valid rating")
+
+
+'''
+
+
+'''
+# Exercise 54:Wavelengths of Visible Light
+#
+# The wavelength of visible light ranges from 380 to 750 nanometers (nm). While the
+# spectrum is continuous, it is often divided into 6 colors as shown below:
+#
+# Color             Wavelength (nm)
+# Violet            380 to less than 450
+# Blue              450 to less than 495
+# Green             495 to less than 570
+# Yellow            570 to less than 590
+# Orange            590 to less than 620
+# Red               620 to 750
+#
+# Write a program that reads a wavelength from the user and reports its color. Display
+# an appropriate error message if the wavelength entered by the user is outside of the
+# visible spectrum
+
+
+wavelenght = int(input("Enter the wavelength : "))
+
+if wavelenght >= 380 and wavelenght < 450:
+  print("Violet")
+elif wavelenght >= 450 and wavelenght < 495:
+  print("Blue")
+elif wavelenght >= 495 and wavelenght < 570:
+  print("Green")
+elif wavelenght >= 570 and wavelenght < 590:
+  print("Yellow")
+elif wavelenght >= 590 and wavelenght < 620:
+  print("Orange")
+elif wavelenght >= 620 and wavelenght <= 750:
+  print("Red")
+else:
+  print("Please enter a valid wavelength")
+
+'''
+
+
+
+'''
+# Exercise 55: Frequency to Name
+#
+# Electromagnetic radiation can be classified into one of 7 categories according to its
+# frequency, as shown in the table below:
+# Name                  Frequency range (Hz)
+# Radio waves           Less than 3 × 10⁹
+# Microwaves            3 × 10⁹ to less than 3 × 10¹²
+# Infrared light        3 × 10¹² to less than 4.3 × 10¹⁴
+# Visible light         4.3 × 10¹⁴ to less than 7.5 × 10¹⁴
+# Ultraviolet light     7.5 × 10¹⁴ to less than 3 × 10¹⁷
+# X-rays                3 × 10¹⁷ to less than 3 × 10¹⁹
+# Gamma rays            3 × 10¹⁹ or more
+
+# Write a program that reads the frequency of the radiation from the user and displays
+# the appropriate name.
+
+radiation_frequency = int(input("Enter the radiation frequency : "))
+
+if radiation_frequency < 3*10**9:
+  print("Radio waves")
+elif radiation_frequency >= 3*10**9 and radiation_frequency < 3*10**12:
+  print("Microwaves")
+elif radiation_frequency >= 3*10**12 and radiation_frequency < 4.3*10**14:
+  print("Infrared light")
+elif radiation_frequency >= 4.3*10**14 and radiation_frequency < 7.5*10**14:
+  print("Visible light")
+elif radiation_frequency >= 7.5*10**14 and radiation_frequency < 3*10**17:
+  print("Ultraviolet light")
+elif radiation_frequency >= 3*10**17 and radiation_frequency < 3*10**19:
+  print("X-rays")
+elif radiation_frequency >= 3*10**19:
+  print("Gamma rays")
+else:
+  print("Please enter a valid radiation frequency")
+
+'''
+
+
+
+'''
+# Exercise 56: Cell Phone Bill
+#
+# A particular cell phone plan includes 50 minutes of air time and 50 text messages
+# for $15.00 a month. Each additional minute of air time costs $0.25, while additional
+# text messages cost $0.15 each. All cell phone bills include an additional charge of
+# $0.44 to support 911 call centers, and the entire bill (including the 911 charge) is
+# subject to 5 percent sales tax.
+# Write a program that reads the number of minutes and text messages used in a
+# month from the user. Display the base charge, additional minutes charge (if any),
+# additional text message charge (if any), the 911 fee, tax and total bill amount. Only
+# display the additional minute and text message charges if the user incurred costs in
+# these categories. Ensure that all of the charges are displayed using 2 decimal places.
+
+cellphone_plan = 15.00
+additonal_minutes = 0.25
+addtional_text = 0.15
+additional_charge = 0.44
+
+minutes = int(input("Enter the number of minutes used : "))
+text_messages = int(input("Enter the number of text messages used : "))
+additional_minutes_input = int(input("How many additional minutes did you use? : "))
+additional_text_messages = int(input("How many additional text messages did you use? : "))
+
+
+if additional_minutes_input == True and additional_text_messages == True:
+  total = (additional_minutes_input * additonal_minutes) + (additional_text_messages * addtional_text)
+  tax = total * 0.05
+  print("The total bill amount is : ", ((minutes + text_messages) * cellphone_plan) + total + tax + additional_charge)
+else:
+  print("The total bill amount is : ", ((minutes + text_messages) * cellphone_plan)+ additional_charge)
+
+
+
+  MY SOLUTION HERE MIGHT NOT BE CORRECT, BECAUSE AM UNABLE TO WRAP MY HEAD AROUND THE PROBLEM
+'''
+
+
+
+'''
+# Exercise 57: Is it a Leap Year?
+
+# Most years have 365 days. However, the time required for the Earth to orbit the Sun
+# is actually slightly more than that. As a result, an extra day, February 29, is included
+# in some years to correct for this difference. Such years are referred to as leap years.
+# The rules for determining whether or not a year is a leap year follow:
+# • Any year that is divisible by 400 is a leap year.
+# • Of the remaining years, any year that is divisible by 100 is not a leap year.
+# • Of the remaining years, any year that is divisible by 4 is a leap year.
+# • All other years are not leap years.
+# Write a program that reads a year from the user and displays a message indicating whether or not it is a leap year
+
+year = int(input("Enter a Year : "))
+
+if year % 400 == 0 or year % 4 == 0:
+  print(f"{year} is a leap year")
+else:
+  year % 100 == 0
+  print(f"{year} is not a leap year ")
+
+
+'''
+
+
+''''
+# Exercise 58: Next Day
+#
+# Write a program that reads a date from the user and computes its immediate successor.
+# For example, if the user enters values that represent 2013-11-18 then your program
+# should display a message indicating that the day immediately after 2013-11-18 is
+# 2013-11-19. If the user enters values that represent 2013-11-30 then the program
+# should indicate that the next day is 2013-12-01. If the user enters values that represent
+# 2013-12-31 then the program should indicate that the next day is 2014-01-01. The
+# date will be entered in numeric form with three separate input statements; one for
+# the year, one for the month, and one for the day. Ensure that your program works correctly for leap years.
+
+year = int(input("Enter the year: "))
+month = int(input("Enter the month: "))
+day = int(input("Enter the day: "))
+
+if month in [1, 3, 5, 7, 8, 10, 12]:
+    max_day = 31
+elif month in [4, 6, 9, 11]:
+    max_day = 30
+else:
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        max_day = 29
+    else:
+        max_day = 28
+
+if day < max_day:
+    next_year, next_month, next_day = year, month, day + 1
+else:
+    if month < 12:
+        next_year, next_month, next_day = year, month + 1, 1
+    else:
+        next_year, next_month, next_day = year + 1, 1, 1
+
+print(f"The day immediately after {year}-{month:02d}-{day:02d} is {next_year}-{next_month:02d}-{next_day:02d}")
+
+'''
+
+
+'''
+# Exercise 59: Is a License Plate Valid?
+#
+# In a particular jurisdiction, older license plates consist of three uppercase letters
+# followed by three numbers. When all of the license plates following that pattern had been used, the format was changed to four numbers followed by three uppercase letters.
+# Write a program that begins by reading a string of characters from the user. Then
+# your program should display a message indicating whether the characters are valid
+# for an older style license plate or a newer style license plate. Your program should
+# display an appropriate message if the string entered by the user is not valid for either
+# style of license plate.
+
+license_plate = input("Enter your license plate number : ")
+if license_plate[0:3].isalpha() and license_plate[0:3].isupper() and license_plate[3:6].isdigit():
+  print(f"{license_plate} is a valid old style license plate number")
+elif license_plate[0:4].isdigit() and license_plate[4:7].isalpha() and license_plate[4:7].isupper():
+  print(f"{license_plate} is a valid new style license plate number")
+else:
+  print(f"{license_plate} is not a valid license plate number")
+
+'''
+
+
+'''
+# Exercise 60: Roulette Payouts
+#
+# A roulette wheel has 38 spaces on it. Of these spaces, 18 are black, 18 are red, and two
+# are green. The green spaces are numbered 0 and 00. The red spaces are numbered 1,
+# 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30 32, 34 and 36. The remaining integers
+# between 1 and 36 are used to number the black spaces.
+# Many different bets can be placed in roulette. We will only consider the following
+# subset of them in this exercise:
+# • Single number (1 to 36, 0, or 00)
+# • Red versus Black
+# • Odd versus Even (Note that 0 and 00 do not pay out for even)
+# • 1 to 18 versus 19 to 36
+# Write a program that simulates a spin of a roulette wheel by using Python’s random
+# number generator. Display the number that was selected and all of the bets that must
+# be payed. For example, if 13 is selected then your program should display:
+# The spin resulted in 13...
+# Pay 13
+# Pay Black
+# Pay Odd
+# Pay 1 to 18
+# If the simulation results in 0 or 00 then your program should display Pay 0 or
+# Pay 00 without any further output
+import random
+
+red_spaces = [ 1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36 ]
+black_spaces = [2,4,6,8,10,11,13,15,17,20,22,24,26,28,29,31,33,35]
+green_spaces = [0, 00]
+roulette =  [0,00, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ]
+
+random_num = random.choice(roulette)
+
+if random_num is red_spaces:
+  print(f"The spin is {random_num}... \n Pay Red \n Pay Even \n Pay 2 to 35")
+elif random_num is black_spaces:
+  print(f"The spin is {random_num}... \n Pay Black \n Pay Odd \n Pay 1 to 18")
+elif random_num is green_spaces:
+  print(f"The spin is {random_num}... \n Pay 0 or Pay 00")
+else:
+  print(f"The spin is {random_num}... \n Pay {random_num}")
+
+
+   WRONG ANSWER, UNABLE TO SOLVE
+'''
+
+
