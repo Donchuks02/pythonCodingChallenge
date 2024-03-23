@@ -1,2 +1,2 @@
 # pythonCodingChallenge
-This repo is for all the coding challenges i was able to solve from Ben Stephenson's book titled "The python workbook" A brief introduction with exercises and solutions.
+This repository contains all the coding challenges I have successfully solved from Ben Stephenson's book titled 'The Python Workbook: A Brief Introduction with Exercises and Solutions
