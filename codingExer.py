@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 1: Mailing Address
 (Solved—9 Lines)
 Create a program that displays your name and complete mailing address formatted in
@@ -11,8 +11,7 @@ print(" Chukwudi David Okoro")
 print(" BackEnd Developer")
 print(" Lagos Nigeria")
 
-'''
-
+"""
 
 '''
 # Exercise 2: Hello
@@ -44,8 +43,6 @@ print(f"The area of your room is {area} sqft")
 
 '''
 
-
-
 '''
 # Exercise 4: Area of a Field
 
@@ -61,8 +58,6 @@ acre = area / 43560
 print(f"The area of your field is {acre} acre ")
 
 '''
-
-
 
 '''
 # Exercise 5: Bottle Deposits
@@ -92,7 +87,6 @@ print(f" Your total refund is ${grandTotal}")
 
 '''
 
-
 '''
 # Exercise 6: Tax and Tip
 #
@@ -104,15 +98,11 @@ print(f" Your total refund is ${grandTotal}")
 # the meal including both the tax and the tip. Format the output so that all of the values
 # are displayed using two decimal places
 
-tax_rate = 0.05
-cost = int(input("What is the cost of the meal ? $ "))
-tip = cost * 0.18
-grandTotal = cost + tax_rate + tip
-print(f"Your tax amount is ${tax_rate:.2f} , \n your tip is ${tip:.2f} \n and the grand total for the meal is {grandTotal:.2f}")
+tax_rate = 0.05 cost = int(input("What is the cost of the meal ? $ ")) tip = cost * 0.18 grandTotal = cost + tax_rate 
++ tip print(f"Your tax amount is ${tax_rate:.2f} , \n your tip is ${tip:.2f} \n and the grand total for the meal is {
+grandTotal:.2f}")
 
 '''
-
-
 
 '''
 # Exercise 7: Sum of the First n Positive Integers
@@ -127,7 +117,6 @@ sum_of_num = (number * ( number + 1 )) / 2
 print(sum_of_num)
 
 '''
-
 
 '''
 
@@ -158,13 +147,11 @@ print(f"The total weight of your order is {(gizmo * gizmo_count) + (widget * wid
 # compute and display the amount in the savings account after 1, 2, and 3 years. Display
 # each amount so that it is rounded to 2 decimal places.
 
-percentage_amount = 4
-amount_deposited = int(input("What is the amount deposited ? $"))
-print(f"After 1st year you'd earn ${(amount_deposited + (percentage_amount))} \n 2nd year you'd earn ${(amount_deposited + (percentage_amount * 2 )) } \n 3rd year you'd earn ${(amount_deposited + (percentage_amount * 3))}")
+percentage_amount = 4 amount_deposited = int(input("What is the amount deposited ? $")) print(f"After 1st year you'd 
+earn ${(amount_deposited + (percentage_amount))} \n 2nd year you'd earn ${(amount_deposited + (percentage_amount * 2 
+)) } \n 3rd year you'd earn ${(amount_deposited + (percentage_amount * 3))}")
 
 '''
-
-
 
 '''
 # Exercise 10: Arithmetic
@@ -191,17 +178,15 @@ remainder =  a % b
 log10 = math.log10(a)
 power = a**b
 
-print(f"The sum is {Sum} \n The difference is {Sub} \n The product is {Mul} \n The quotient is {Div} \n The remainder is {remainder} \n The Base10 is {log10} \n The power is {power}")
+print(f"The sum is {Sum} \n The difference is {Sub} \n The product is {Mul} \n The quotient is {Div} \n The remainder 
+is {remainder} \n The Base10 is {log10} \n The power is {power}")
 
 '''
 
-'''
-# Exercise 11: Fuel Efficiency
-#
-# In the United States, fuel efficiency for vehicles is normally expressed in miles-per-gallon (MPG). In Canada, fuel efficiency is normally expressed in liters-per-hundred
-# kilometers (L/100 km). Use your research skills to determine how to convert from
-# MPG to L/100 km. Then create a program that reads a value from the user in American
-# units and displays the equivalent fuel efficiency in Canadian units
+'''# Exercise 11: Fuel Efficiency # # In the United States, fuel efficiency for vehicles is normally expressed in 
+miles-per-gallon (MPG). In Canada, fuel efficiency is normally expressed in liters-per-hundred # kilometers (L/100 
+km). Use your research skills to determine how to convert from # MPG to L/100 km. Then create a program that reads a 
+value from the user in American # units and displays the equivalent fuel efficiency in Canadian units
 
 liter_per_km = 235.21
 MGP_input = int(input("Enter your MGP amount : "))
@@ -209,7 +194,6 @@ L100_km = liter_per_km / MGP_input
 print(L100_km)
 
 '''
-
 
 # Exercise 12: Distance Between Two Points on Earth
 #
@@ -230,8 +214,6 @@ print(L100_km)
 # need to convert the user’s input from degrees to radians before computing the
 # distance with the formula discussed previously. The math module contains a
 # function named radians which converts from degrees to radians.
-
-
 
 
 '''
@@ -299,8 +281,6 @@ print(f"Your height in CM is : {cm}cm")
 
 '''
 
-
-
 '''
 # Exercise 15: Distance Units
 #
@@ -332,31 +312,20 @@ print(f"{input_feet} feet is {miles:.2f} miles")
 # 3πr 3
 
 
-
-
-
 #
 # Exercise 17: Heat Capacity
 #
-# The amount of energy required to increase the temperature of one gram of a material
-# by one degree Celsius is the material’s specific heat capacity, C. The total amount
-# of energy required to raise m grams of a material by ΔT degrees Celsius can be
-# computed using the formula:
-# q = mCΔT.
-# Write a program that reads the mass of some water and the temperature change
-# from the user. Your program should display the total amount of energy that must be
-# added or removed to achieve the desired temperature change.
-# Hint: The specific heat capacity of water is 4.186 J
-# g◦C. Because water has a density of 1.0 gram per millilitre, you can use grams and millilitres interchangeably
-# in this exercise.
-# Extend your program so that it also computes the cost of heating the water. Electricity is normally billed using units of kilowatt hours rather than Joules. In this
-# exercise, you should assume that electricity costs 8.9 cents per kilowatt-hour. Use
-# your program to compute the cost of boiling water for a cup of coffee.
-# Hint: You will need to look up the factor for converting between Joules and
-# kilowatt hours to complete the last part of this exercise
-
-
-
+# The amount of energy required to increase the temperature of one gram of a material by one degree Celsius is the
+# material’s specific heat capacity, C. The total amount of energy required to raise m grams of a material by ΔT
+# degrees Celsius can be computed using the formula: q = mCΔT. Write a program that reads the mass of some water and
+# the temperature change from the user. Your program should display the total amount of energy that must be added or
+# removed to achieve the desired temperature change. Hint: The specific heat capacity of water is 4.186 J g◦C.
+# Because water has a density of 1.0 gram per millilitre, you can use grams and millilitres interchangeably in this
+# exercise. Extend your program so that it also computes the cost of heating the water. Electricity is normally
+# billed using units of kilowatt-hours rather than Joules. In this exercise, you should assume that electricity costs
+# 8.9 cents per kilowatt-hour. Use your program to compute the cost of boiling water for a cup of coffee. Hint: You
+# will need to look up the factor for converting between Joules and kilowatt-hours to complete the last part of this
+# exercise
 
 
 '''
@@ -381,8 +350,6 @@ print(f"Volume of the cylinder is {volume:.1f}")
 
 '''
 
-
-
 # Exercise 19: Free Fall
 # Create a program that determines how quickly an object is traveling when it hits the
 # ground. The user will enter the height from which the object is dropped in meters (m).
@@ -391,9 +358,6 @@ print(f"Volume of the cylinder is {volume:.1f}")
 # v2
 # i + 2ad to compute the
 # final speed, vf , when the initial speed, vi , acceleration, a, and distance, d, are known.
-
-
-
 
 
 #
@@ -447,8 +411,8 @@ print(f"The base lenght is {base_length} \n The height is {height} \n The area o
 # Develop a program that reads the lengths of the sides of a triangle from the user and displays its area
 import math
 s1 = int(input("Enter the length of base : "))
-s2 = int(input("Enter the left side lenght : "))
-s3 = int(input("Enter the right side lenght "))
+s2 = int(input("Enter the left side length : "))
+s3 = int(input("Enter the right side length "))
 
 s = (s1 + s2 + s3) / 2
 
@@ -460,13 +424,12 @@ print(f"The area of the triangle is {area}")
 
 # Exercise 23: Area of a Regular Polygon
 #
-# A polygon is regular if its sides are all the same length and the angles between all of
+# A polygon is regular if its sides are all the same length and the angles between all
 # the adjacent sides are equal. The area of a regular polygon can be computed using
 # the following formula, where s is the length of a side and n is the number of sides
 # area = n * s2 / 4 * tan (π/π)
 # Write a program that reads s and n from the user and then displays the area of a
 # regular polygon constructed from these values.
-
 
 
 '''
@@ -478,7 +441,7 @@ print(f"The area of the triangle is {area}")
 
 days = int(input("Input number of days : "))
 hours = int(input("Input number of hours : "))
-minutes = int(input("Input number of mintues : "))
+minutes = int(input("Input number of minutes : "))
 seconds = int(input("Input number of seconds : "))
 
 seconds_per_day = 86400
@@ -491,13 +454,11 @@ print(f"The total number of seconds represented by this duration is {total}")
 
 '''
 
-'''
-# Exercise 25: Units of Time (Again)
-#
-# In this exercise you will reverse the process described in the previous exercise.
-# Develop a program that begins by reading a number of seconds from the user.
-# Then your program should display the equivalent amount of time in the form
-# D:HH:MM:SS, where D, HH, MM, and SS represent days, hours, minutes and seconds respectively. The hours, minutes and seconds should all be formatted so that they occupy exactly two digits, with a leading 0 displayed if necessary.
+'''# Exercise 25: Units of Time (Again) # # In this exercise you will reverse the process described in the previous 
+exercise. # Develop a program that begins by reading a number of seconds from the user. # Then your program should 
+display the equivalent amount of time in the form # D:HH:MM:SS, where D, HH, MM, and SS represent days, hours, 
+minutes and seconds respectively. The hours, minutes and seconds should all be formatted so that they occupy exactly 
+two digits, with a leading 0 displayed if necessary.
 
 total_seconds = int(input("Enter the number of seconds: "))
 
@@ -517,13 +478,10 @@ print("Equivalent time:", formatted_time)
 
 '''
 
-
-
-'''
-# Exercise 26: Current Time
-#
-# Python includes a library of functions for working with time, including a function
-# called asctime in the time module. It reads the current time from the computer’s internal clock and returns it in a human-readable format. Write a program that displays the current time and date. Your program will not require any input from the user
+'''# Exercise 26: Current Time # # Python includes a library of functions for working with time, including a function 
+# called asctime in the time module. It reads the current time from the computer’s internal clock and returns it in a 
+human-readable format. Write a program that displays the current time and date. Your program will not require any 
+input from the user
 
 import time
 current_time = time.asctime(time.localtime(time.time()))
@@ -531,13 +489,12 @@ print(current_time)
 
 '''
 
-
-'''
-# Exercise 27: Body Mass Index
-#
-# Write a program that computes the body mass index (BMI) of an individual. Your program should begin by reading a height and weight from the user. Then it should use one of the following two formulas to compute the BMI before displaying it. If you read the height in inches and the weight in pounds then body mass index is computed using the following formula:
-# BMI = weight / height * height * 703.
-# If you read the height in meters and the weight in kilograms then body mass index is computed using this slightly simpler formula: BMI = weight / height * height
+'''# Exercise 27: Body Mass Index # # Write a program that computes the body mass index (BMI) of an individual. Your 
+program should begin by reading a height and weight from the user. Then it should use one of the following two 
+formulas to compute the BMI before displaying it. If you read the height in inches and the weight in pounds then body 
+mass index is computed using the following formula: # BMI = weight / height * height * 703. # If you read the height 
+in meters and the weight in kilograms then body mass index is computed using this slightly simpler formula: BMI = 
+weight / height * height
 
 height = int(input("What is your height in meters ? "))
 weight = int(input("What is your weight in kilogram ? "))
@@ -546,19 +503,15 @@ print(f"Your BMI is {BMI}")
 
 '''
 
-
-
-'''
-# Exercise 28:Wind Chill
-#
-# When the wind blows in cold weather, the air feels even colder than it actually is because the movement of the air increases the rate of cooling for warm objects, like people. This effect is known as wind chill.
-# In 2001, Canada, the United Kingdom and the United States adopted the following formula for computing the wind chill index. Within the formula Ta is the
-# air temperature in degrees Celsius and V is the wind speed in kilometers per hour.
-# A similar formula with different constant values can be used with temperatures in
-# degrees Fahrenheit and wind speeds in miles per hour.
-# WCI = 13.12 + 0.6215Ta − 11.37V0.16 + 0.3965TaV0.16
-# Write a program that begins by reading the air temperature and wind speed from the user. Once these values have been read your program should display the wind chill index rounded to the closest integer.
-# The wind chill index is only considered valid for temperatures less than or equal to 10 degrees Celsius and wind speeds exceeding 4.8 kilometers per hour
+'''# Exercise 28:Wind Chill # # When the wind blows in cold weather, the air feels even colder than it actually is 
+because the movement of the air increases the rate of cooling for warm objects, like people. This effect is known as 
+wind chill. # In 2001, Canada, the United Kingdom and the United States adopted the following formula for computing 
+the wind chill index. Within the formula Ta is the # air temperature in degrees Celsius and V is the wind speed in 
+kilometers per hour. # A similar formula with different constant values can be used with temperatures in # degrees 
+Fahrenheit and wind speeds in miles per hour. # WCI = 13.12 + 0.6215Ta − 11.37V0.16 + 0.3965TaV0.16 # Write a program 
+that begins by reading the air temperature and wind speed from the user. Once these values have been read your 
+program should display the wind chill index rounded to the closest integer. # The wind chill index is only considered 
+valid for temperatures less than or equal to 10 degrees Celsius and wind speeds exceeding 4.8 kilometers per hour
 
 Ta = int(input("Enter the air temperature in degrees Celsius : "))
 V = int(input("Enter the wind speed in kilometers : "))
@@ -569,7 +522,6 @@ WCI = 13.12 + 0.6215 * (Ta) - 11.37(V)**0.16 + 0.3965*(Ta)*(V)**0.16
 
 '''
 
-
 '''
 # Exercise 29: Celsius to Fahrenheit and Kelvin
 # Write a program that begins by reading a temperature from the user in degrees
@@ -577,17 +529,17 @@ WCI = 13.12 + 0.6215 * (Ta) - 11.37(V)**0.16 + 0.3965*(Ta)*(V)**0.16
 # Fahrenheit and degrees Kelvin. The calculations needed to convert between different
 # units of temperature can be found on the internet
 
-temperature = int(input("Enter the temperature degree celsius : "))
-calcFahrenheit = (temperature * 2) + 30
-calcKelvin = temperature + 273.15
-print(f"Celcius is {temperature}°C ,converted to Fahrenheit is {calcFahrenheit}°F, converted to kelvin is {calcKelvin}K")
+temperature = int(input("Enter the temperature degree celsius : ")) calcFahrenheit = (temperature * 2) + 30 
+calcKelvin = temperature + 273.15 print(f"Celcius is {temperature}°C ,converted to Fahrenheit is {calcFahrenheit}°F, 
+converted to kelvin is {calcKelvin}K")
 
 '''
 
 # Exercise 30: Units of Pressure
 #
-# In this exercise you will create a program that reads a pressure from the user in kilopascals. Once the pressure has been read your program should report the equivalent pressure in pounds per square inch, millimeters of mercury and atmospheres. Use your research skills to determine the conversion factors between these units.
-
+# In this exercise you will create a program that reads a pressure from the user in kilopascals. Once the pressure
+# has been read your program should report the equivalent pressure in pounds per square inch, millimeters of mercury
+# and atmospheres. Use your research skills to determine the conversion factors between these units.
 
 
 '''
@@ -607,7 +559,6 @@ total = int(firstNum) + int(secondNum) + int(thirdNum) + int(fourthNum)
 print(f"{firstNum} + {secondNum} + {thirdNum} + {fourthNum} = {total} ")
 
 '''
-
 
 '''
 # Exercise 32: Sort 3 Integers
@@ -629,9 +580,6 @@ print(f"The largest value is {max_num} \n The smallest value is {min_num} \n The
 
 '''
 
-
-
-
 '''
 # Exercise 33: Day Old Bread
 #
@@ -651,9 +599,7 @@ print(f"Regular price : ${bread_price} \nDiscount price : ${discounted_price:.1f
 
 '''
 
-
 # IF STATEMENT EXERCISES
-
 
 
 '''
@@ -695,7 +641,6 @@ else:
     print(dog_years)
 '''
 
-
 # UNABLE TO SOLVE
 
 ''''
@@ -710,13 +655,10 @@ else:
 # a consonant. Otherwise your program should display a message indicating that the letter is a consonant.
 
 
-inputed_letter = input("Enter a letter : ")
-if inputed_letter == "a" or inputed_letter == "e" or inputed_letter == "i" or inputed_letter == "o" or inputed_letter == "u":
-  print(f"{inputed_letter} is a Vowel")
-elif inputed_letter == 'y':
-  print(f"sometimes {inputed_letter} is a vowel, and sometimes {inputed_letter} is a consonant")
-else:
-  print(f"{inputed_letter} is a consonant")
+inputed_letter = input("Enter a letter : ") if inputed_letter == "a" or inputed_letter == "e" or inputed_letter == 
+"i" or inputed_letter == "o" or inputed_letter == "u": print(f"{inputed_letter} is a Vowel") elif inputed_letter == 
+'y': print(f"sometimes {inputed_letter} is a vowel, and sometimes {inputed_letter} is a consonant") else: print(f"{
+inputed_letter} is a consonant")
 
 '''
 
@@ -752,7 +694,6 @@ else:
 
 
 '''
-
 
 '''
 # Exercise 38: Month Name to Number of Days
@@ -815,7 +756,6 @@ elif decibel_level > 130:
 
   '''
 
-
 '''
 # Exercise 40: Name that Triangle
 #
@@ -838,9 +778,6 @@ else:
   print("This is a scalene triangle")
 
   '''
-
-
-
 
 '''
 # Exercise 41: Note To Frequency
@@ -905,52 +842,30 @@ UNABLE TO SOLVE
 
 '''
 
-
 # Exercise 42: Frequency To Note
 #
 # In the previous question you converted from note name to frequency. In this question
 # you will write a program that reverses that process. Begin by reading a frequency
 # from the user. If the frequency is within one Hertz of a value listed in the table in
-# the previous question then report the name of the note. Otherwise report that the
+# the previous question then report the name of the note. Otherwise, report that the
 # frequency does not correspond to a known note. In this exercise you only need to
 # consider the notes listed in the table. There is no need to consider notes from other
 # octaves.
 
 
-
-
-
 '''
 
-#
-# Exercise 43: Faces on Money
-#
-# It is common for images of a country’s previous leaders, or other individuals of historical significance, to appear on its money. The individuals that appear on banknotes
-# in the United States are listed in Table 2.1.
-# Write a program that begins by reading the denomination of a banknote from the
-# user. Then your program should display the name of the individual that appears on the
-#
-#
-# Table 2.1 Individuals that
-# appear on Banknotes
-# Individual          Amount
-# George Washington     $1
-# Thomas Jefferson      $2
-# Abraham Lincoln       $5
-# Alexander Hamilton    $10
-# Andrew Jackson        $20
-# Ulysses S. Grant      $50
-# Benjamin Franklin     $100
-#
-#
-# banknote of the entered amount. An appropriate error message should be displayed
-# if no such note exists.
-# While two dollar banknotes are rarely seen in circulation in the United States
-# they are legal tender that can be spent just like any other denomination. The
-# United States has also issued banknotes in denominations of $500, $1,000,
-# $5,000, and $10,000 for public use. However, high denomination banknotes
-# have not been printed since 1945 and were officially discontinued in 1969. As
-# a result, we will not consider them in this exercise.
+# # Exercise 43: Faces on Money # # It is common for images of a country’s previous leaders, or other individuals of 
+historical significance, to appear on its money. The individuals that appear on banknotes # in the United States are 
+listed in Table 2.1. # Write a program that begins by reading the denomination of a banknote from the # user. Then 
+your program should display the name of the individual that appears on the # # # Table 2.1 Individuals that # appear 
+on Banknotes # Individual          Amount # George Washington     $1 # Thomas Jefferson      $2 # Abraham Lincoln     
+  $5 # Alexander Hamilton    $10 # Andrew Jackson        $20 # Ulysses S. Grant      $50 # Benjamin Franklin     $100 
+  # # # banknote of the entered amount. An appropriate error message should be displayed # if no such note exists. # 
+  While two dollar banknotes are rarely seen in circulation in the United States # they are legal tender that can be 
+  spent just like any other denomination. The # United States has also issued banknotes in denominations of $500, $1,
+  000, # $5,000, and $10,000 for public use. However, high denomination banknotes # have not been printed since 1945 
+  and were officially discontinued in 1969. As # a result, we will not consider them in this exercise.
 
 enter_denomination = int(input("Enter the denomination :$ "))
 if enter_denomination == 1:
@@ -973,7 +888,6 @@ else:
 
 
 '''
-
 
 '''
 # Exercise 44: Date to Holiday Name
@@ -1012,19 +926,15 @@ else:
 
 '''
 
-
-
 '''
 
-# Exercise 45: What Color is that Square?
-#
-# Positions on a chess board are identified by a letter and a number. The letter    identifies the column, while the number identifies the row, as shown below:
-#
-# img.md
-#
-# Write a program that reads a position from the user. Use an if statement to determine if the column begins with a black square or a white square. Then use modular
-# arithmetic to report the color of the square in that row. For example, if the user enters a1 then your program should report that the square is black. If the user enters d5
-# then your program should report that the square is white. Your program may assume that a valid position will always be entered. It does not need to perform any error checking.
+# Exercise 45: What Color is that Square? # # Positions on a chess board are identified by a letter and a number. The 
+letter    identifies the column, while the number identifies the row, as shown below: # # img.md # # Write a program 
+that reads a position from the user. Use an if statement to determine if the column begins with a black square or a 
+white square. Then use modular # arithmetic to report the color of the square in that row. For example, if the user 
+enters a1 then your program should report that the square is black. If the user enters d5 # then your program should 
+report that the square is white. Your program may assume that a valid position will always be entered. It does not 
+need to perform any error checking.
 
 # BELLOW IS THE ANSWER AI GAVE ME
 
@@ -1058,10 +968,6 @@ else:
 
 
 '''
-
-
-
-
 
 '''
 
@@ -1157,14 +1063,9 @@ else:
 
 '''
 
-
-
-
-
-
 # Exercise 48: Chinese Zodiac
 #
-# The Chinese zodiac assigns animals to years in a 12 year cycle. One 12 year cycle is
+# The Chinese zodiac assigns animals to years in a 12-year cycle. One 12 year cycle is
 # shown in the table below. The pattern repeats from there, with 2012 being another
 # year of the dragon, and 1999 being another year of the hare.
 #
@@ -1185,8 +1086,6 @@ else:
 # Write a program that reads a year from the user and displays the animal associated
 # with that year. Your program should work correctly for any year greater than or equal
 # to zero, not just the ones listed in the table
-
-
 
 
 '''
@@ -1238,11 +1137,9 @@ else:
 
 '''
 
-
-
 # Exercise 50: Roots of a Quadratic Function
 #
-# A univariate quadratic function has the form f (x) = ax2 + bx + c, where a, b and
+# A uni variate quadratic function has the form f (x) = ax2 + bx + c, where a, b and
 # c are constants, and a is non-zero. The roots of a quadratic function can be found
 # by finding the values of x that satisfy the quadratic equation ax2 + bx + c = 0. A
 # quadratic function may have 0, 1 or 2 real roots. These roots can be computed using
@@ -1250,7 +1147,7 @@ else:
 # root = −b ± √b2 − 4ac / 2a
 # The portion of the expression under the square root sign is called the discriminant.
 # If the discriminant is negative then the quadratic equation does not have any real roots.
-# If the discriminant is 0, then the equation has one real root. Otherwise the equation
+# If the discriminant is 0, then the equation has one real root. Otherwise, the equation
 # has two real roots, and the expression must be evaluated twice, once using a plus
 # sign, and once using a minus sign, when computing the numerator.
 # Write a program that computes the real roots of a quadratic function. Your program
@@ -1258,30 +1155,12 @@ else:
 # a message indicating the number of real roots, along with the values of the real roots (if any)
 
 
-
-
-
-'''
-# Exercise 51: Letter Grade to Grade Points
-#
-# At a particular university, letter grades are mapped to grade points in the following
-# manner:
-# Letter        Grade points
-# A+            4.0
-# A             4.0
-# A−            3.7
-# B+            3.3
-# B             3.0
-# B−            2.7
-# C+            2.3
-# C             2.0
-# C−            1.7
-# D+            1.3
-# D             1.0
-# F             0
-#
-# Write a program that begins by reading a letter grade from the user. Then your
-# program should compute and display the equivalent number of grade points. Ensure that your program generates an appropriate error message if the user enters an invalid letter grade.
+'''# Exercise 51: Letter Grade to Grade Points # # At a particular university, letter grades are mapped to grade 
+points in the following # manner: # Letter        Grade points # A+            4.0 # A             4.0 # A−           
+ 3.7 # B+            3.3 # B             3.0 # B−            2.7 # C+            2.3 # C             2.0 # C−         
+    1.7 # D+            1.3 # D             1.0 # F             0 # # Write a program that begins by reading a letter 
+    grade from the user. Then your # program should compute and display the equivalent number of grade points. Ensure 
+    that your program generates an appropriate error message if the user enters an invalid letter grade.
 
 letter_grade  = input("Enter the letter grade : ").capitalize()
 
@@ -1314,17 +1193,11 @@ else:
 
 '''
 
-
-
-
-'''
-# Exercise 52: Grade Points to Letter Grade
-#
-# In the previous exercise you created a program that converts a letter grade into the
-# equivalent number of grade points. In this exercise you will create a program that
-# reverses the process and converts from a grade point value entered by the user to a
-# letter grade. Ensure that your program handles grade point values that fall between
-# letter grades. These should be rounded to the closest letter grade. Your program should report A+ for a 4.0 (or greater) grade point average.
+'''# Exercise 52: Grade Points to Letter Grade # # In the previous exercise you created a program that converts a 
+letter grade into the # equivalent number of grade points. In this exercise you will create a program that # reverses 
+the process and converts from a grade point value entered by the user to a # letter grade. Ensure that your program 
+handles grade point values that fall between # letter grades. These should be rounded to the closest letter grade. 
+Your program should report A+ for a 4.0 (or greater) grade point average.
 
 grade = float(input('Enter your grade number: '))
 if grade >= 4.0:
@@ -1356,20 +1229,15 @@ else:
 
 '''
 
-
-'''
-# Exercise 53: Assessing Employees
-#
-# At a particular company, employees are rated at the end of each year. The rating scale
-# begins at 0.0, with higher values indicating better performance and resulting in larger raises. The value awarded to an employee is either 0.0, 0.4, or 0.6 or more. Values between 0.0 and 0.4, and between 0.4 and 0.6 are never used. The meaning associated with each rating is shown in the following table. The amount of an employee’s raise is $2400.00 multiplied by their rating.
-#
-# Rating            Meaning
-# 0.0               Unacceptable performance
-# 0.4               Acceptable performance
-# 0.6 or more       Meritorious performance
-#
-# Write a program that reads a rating from the user and indicates whether the performance was unacceptable, acceptable or meritorious. The amount of the employee’s raise should also be reported. Your program should display an appropriate error message if an invalid rating is entered.
-import math
+'''# Exercise 53: Assessing Employees # # At a particular company, employees are rated at the end of each year. The 
+rating scale # begins at 0.0, with higher values indicating better performance and resulting in larger raises. The 
+value awarded to an employee is either 0.0, 0.4, or 0.6 or more. Values between 0.0 and 0.4, and between 0.4 and 0.6 
+are never used. The meaning associated with each rating is shown in the following table. The amount of an employee’s 
+raise is $2400.00 multiplied by their rating. # # Rating            Meaning # 0.0               Unacceptable 
+performance # 0.4               Acceptable performance # 0.6 or more       Meritorious performance # # Write a 
+program that reads a rating from the user and indicates whether the performance was unacceptable, acceptable or 
+meritorious. The amount of the employee’s raise should also be reported. Your program should display an appropriate 
+error message if an invalid rating is entered. import math
 
 emplo_raise = 2400.00
 
@@ -1388,7 +1256,6 @@ else:
 
 
 '''
-
 
 '''
 # Exercise 54:Wavelengths of Visible Light
@@ -1428,8 +1295,6 @@ else:
 
 '''
 
-
-
 '''
 # Exercise 55: Frequency to Name
 #
@@ -1468,8 +1333,6 @@ else:
 
 '''
 
-
-
 '''
 # Exercise 56: Cell Phone Bill
 #
@@ -1507,8 +1370,6 @@ else:
   MY SOLUTION HERE MIGHT NOT BE CORRECT, BECAUSE AM UNABLE TO WRAP MY HEAD AROUND THE PROBLEM
 '''
 
-
-
 '''
 # Exercise 57: Is it a Leap Year?
 
@@ -1532,7 +1393,6 @@ else:
 
 
 '''
-
 
 ''''
 # Exercise 58: Next Day
@@ -1572,17 +1432,12 @@ print(f"The day immediately after {year}-{month:02d}-{day:02d} is {next_year}-{n
 
 '''
 
-
-'''
-# Exercise 59: Is a License Plate Valid?
-#
-# In a particular jurisdiction, older license plates consist of three uppercase letters
-# followed by three numbers. When all of the license plates following that pattern had been used, the format was changed to four numbers followed by three uppercase letters.
-# Write a program that begins by reading a string of characters from the user. Then
-# your program should display a message indicating whether the characters are valid
-# for an older style license plate or a newer style license plate. Your program should
-# display an appropriate message if the string entered by the user is not valid for either
-# style of license plate.
+'''# Exercise 59: Is a License Plate Valid? # # In a particular jurisdiction, older license plates consist of three 
+uppercase letters # followed by three numbers. When all of the license plates following that pattern had been used, 
+the format was changed to four numbers followed by three uppercase letters. # Write a program that begins by reading 
+a string of characters from the user. Then # your program should display a message indicating whether the characters 
+are valid # for an older style license plate or a newer style license plate. Your program should # display an 
+appropriate message if the string entered by the user is not valid for either # style of license plate.
 
 license_plate = input("Enter your license plate number : ")
 if license_plate[0:3].isalpha() and license_plate[0:3].isupper() and license_plate[3:6].isdigit():
@@ -1593,7 +1448,6 @@ else:
   print(f"{license_plate} is not a valid license plate number")
 
 '''
-
 
 '''
 # Exercise 60: Roulette Payouts
@@ -1620,10 +1474,9 @@ else:
 # Pay 00 without any further output
 import random
 
-red_spaces = [ 1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36 ]
-black_spaces = [2,4,6,8,10,11,13,15,17,20,22,24,26,28,29,31,33,35]
-green_spaces = [0, 00]
-roulette =  [0,00, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ]
+red_spaces = [ 1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36 ] black_spaces = [2,4,6,8,10,11,13,
+15,17,20,22,24,26,28,29,31,33,35] green_spaces = [0, 00] roulette =  [0,00, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 
+13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ]
 
 random_num = random.choice(roulette)
 
@@ -1640,11 +1493,7 @@ else:
    WRONG ANSWER, UNABLE TO SOLVE
 '''
 
-
-
-
 # LOOP EXERCISES STATRS HERE
-
 
 
 '''
@@ -1666,10 +1515,6 @@ print(f"The average is {sum(average) // (len(average))}")
 
 '''
 
-
-
-
-
 '''
 
 # Exercise 62: Discount Table
@@ -1687,12 +1532,11 @@ print(f"The average is {sum(average) // (len(average))}")
 allPrices = [4.95, 9.95, 14.95, 19.95, 24.95]
 discountPrice = 0.60
 
-for price in allPrices:
-  print(f"Original Price : {price:.2f} \t Discount : {price * discountPrice:.2f} \t New Price : {price - (price * discountPrice):.2f}")
+for price in allPrices: print(f"Original Price : {price:.2f} \t Discount : {price * discountPrice:.2f} \t New Price : 
+{price - (price * discountPrice):.2f}")
 
 
 '''
-
 
 '''
 # Exercise 63: Temperature Conversion Table
@@ -1711,7 +1555,7 @@ for number in range(0,101, 10):
 
 # Exercise 64: No More Pennies
 #
-# February 4, 2013 was the last day that pennies were distributed by the Royal Canadian
+# February 4, 2013, was the last day that pennies were distributed by the Royal Canadian
 # Mint. Now that pennies have been phased out retailers must adjust totals so that they
 # are multiples of 5 cents when they are paid for with cash (credit card and debit card
 # transactions continue to be charged to the penny). While retailers have some freedom
@@ -1722,6 +1566,119 @@ for number in range(0,101, 10):
 # payment should be rounded to the nearest nickel. One way to compute the cash
 # payment amount is to begin by determining how many pennies would be needed to
 # pay the total. Then compute the remainder when this number of pennies is divided
-# by 5. Finally, adjust the total down if the remainder is less than 2.5. Otherwise adjust
+# by 5. Finally, adjust the total down if the remainder is less than 2.5. Otherwise, adjust
 # the total up
 
+
+# Exercise 65: Compute the Perimeter of a Polygon
+#
+# Write a program that computes the perimeter of a polygon. Begin by reading the x and y values for the first point
+# on the perimeter of the polygon from the user. Then continue reading pairs of x and y values until the user enters
+# a blank line for the x-coordinate. Each time you read an additional coordinate you should compute the distance to
+# the previous point and add it to the perimeter. When a blank line is entered for the x-coordinate your program
+# should add the distance from the last point back to the first point to the perimeter. Then it should display the
+# total perimeter. Sample input and output is shown below, with user input shown in bold: Enter the x part of the
+# coordinate: 0 Enter the y part of the coordinate: 0 Enter the x part of the coordinate: (blank to quit): 1 Enter
+# the y part of the coordinate: 0 Enter the x part of the coordinate: (blank to quit): 0 Enter the y part of the
+# coordinate: 1 Enter the x part of the coordinate: (blank to quit): The perimeter of that polygon is 3.414213562373095
+
+
+'''
+# Exercise 66: Compute a Grade Point Average
+#
+# Exercise 51 included a table that shows the conversion from letter grades to grade
+# points at a particular academic institution. In this exercise you will compute the
+# grade point average of an arbitrary number of letter grades entered by the user. The
+# user will enter a blank line to indicate that all of the grades have been provided. For
+# example, if the user enters A, followed by C+, followed by B, followed by a blank
+# line then your program should report a grade point average of 3.1.
+# You may find your solution to Exercise 51 helpful when completing this exercise.
+# Your program does not need to do any error checking. It can assume that each value
+# entered by the user will always be a valid letter grade or a blank line
+
+
+def compute_gpa(grade_point_table):
+    total_grade_points = 0
+    total_grades = 0
+
+    # Prompt the user to enter letter grades
+    while True:
+        grade = input("Enter a letter grade (or press Enter to finish): ").upper()
+        if not grade:
+            break
+
+        # Check if the entered grade is valid
+        if grade in grade_point_table:
+            grade_point = grade_point_table[grade]
+            total_grade_points += grade_point
+            total_grades += 1
+        else:
+            print("Invalid grade entered. Please enter a valid letter grade.")
+
+    # Calculate GPA
+    if total_grades > 0:
+        gpa = total_grade_points / total_grades
+        return gpa
+    else:
+        return None
+
+# Dictionary mapping letter grades to grade points
+grade_point_table = {
+    "A+": 4.0,
+    "A": 4.0,
+    "A-": 3.7,
+    "B+": 3.3,
+    "B": 3.0,
+    "B-": 2.7,
+    "C+": 2.3,
+    "C": 2.0,
+    "C-": 1.7,
+    "D+": 1.3,
+    "D": 1.0,
+    "F": 0
+}
+
+# Compute GPA
+gpa = compute_gpa(grade_point_table)
+
+# Display GPA
+if gpa is not None:
+    print("Grade Point Average:", round(gpa, 2))
+else:
+    print("No grades entered.")
+
+
+'''
+
+'''
+# Exercise 67: Admission Price
+# A particular zoo determines the price of admission based on the age of the guest.
+# Guests 2 years of age and less are admitted without charge. Children between 3 and
+# 12 years of age cost $14.00. Seniors aged 65 years and over cost $18.00. Admission
+# for all other guests is $23.00.
+# Create a program that begins by reading the ages of all the guests in a group
+# from the user, with one age entered on each line. The user will enter a blank line to
+# indicate that there are no more guests in the group. Then your program should display
+# the admission cost for the group with an appropriate message. The cost should be
+# displayed using two decimal places
+
+all_inputted_ages = []
+total = 0
+
+while True:
+    age_input = input("Enter the age available (enter blank to finish) : ")
+    if age_input.strip() == "":
+        break
+    ages = int(age_input)
+    all_inputted_ages.append(ages)
+    for each_age in all_inputted_ages:
+        if each_age == 2:
+            pass
+        elif 3 <= each_age <= 12:
+            total += 14.00
+        elif 12 < each_age < 65:
+            total += 23.00
+        elif each_age >= 65:
+            total += 18.00
+print(f"The total cost is ${total :.2f}")
+'''
